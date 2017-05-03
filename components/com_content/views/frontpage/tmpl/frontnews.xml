@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="FrontPage News">
+		<message>
+			<![CDATA[CATEGORY BLOG LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>FrontPage News</name>
+		<description>Display FrontPage News</description>
+	</state>
+</metadata>

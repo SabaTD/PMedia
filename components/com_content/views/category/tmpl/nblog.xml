@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Rubric Layout">
+        <message>
+			<![CDATA[CATEGORY BLOG LAYOUT DESC]]>
+        </message>
+    </layout>
+    <state>
+        <name>Rubric Layout</name>
+        <description>CATEGORY BLOG LAYOUT DESC</description>
+        <url>
+            <param name="id" type="category" label="Category" description="Choose a category..." />
+        </url>
+        <params> 
+            <param name="@spacer" type="spacer" default="Inline Video Ad (pre/mid/post-roll)" label="" description="" />
+            <param name="zone" type="text" default="" label="Advert Pre Zone" description="Advert Zone" />
+            <param name="zoneadd" type="text" default="" label="Advert Post Zone" description="Additional Advert Zone" />
+            <!--                  <param name="middle_zone" type="text" default="" label="Middle Advert Zone" description="Additional Advert Zone" />
+            <param name="middle_zone_time" type="text" default="" label="Middle Advert Zone Time(%)" description="Additional Advert Zone" />-->
+            <param name="url" type="text" default="http://v.ambebi.ge" label="Server URL" description="Server URL" />
+			
+            <param name="advertstatus" type="radio" default="0" label="Disable Video Advert For This Video" description="Video Advert Status" >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </param>     
+            
+				
+        </params> 
+    </state>
+</metadata>

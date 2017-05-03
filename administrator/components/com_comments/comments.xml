@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Comments</name>
+	<author>Teimuraz Kevlishvili</author>
+	<copyright>Copyright (C) 2009.</copyright>
+	<creationDate>October 2009</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>tkevlishvili@gmail.com</authorEmail>
+	<authorUrl>www.websolutions.ge</authorUrl>
+	<version>1.1</version>
+	<description>Comments System for Joomla!</description>
+		
+	<!-- Install Database Section -->
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.mysql.sql</file>
+		</sql>
+	</install>
+	<!-- Uninstall Database Section -->
+	<uninstall>
+		<sql>
+			<file driver="mysql">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>comments.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<!-- Site Main Language File Copy Section -->
+	<languages folder="site/lang">
+		<language tag="en-GB">en-GB.com_comments.ini</language>
+		<language tag="ka-GE">ka-GE.com_comments.ini</language>
+		<language tag="en-GB">en-GB.plg_content_comments.ini</language>
+		<language tag="ka-GE">ka-GE.plg_content_comments.ini</language>
+	</languages>
+	
+	<administration>	
+		<!--[maybe not needed] Administration Menu Section -->
+		<menu>Comments Manager</menu>
+		
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>admin.comments.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>	
+			<folder>helpers</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<!-- Install files -->
+			<filename>install.mysql.sql</filename>
+      		<filename>uninstall.mysql.sql</filename>
+		</files>
+	</administration>
+	<params>	
+	</params>
+</install>
